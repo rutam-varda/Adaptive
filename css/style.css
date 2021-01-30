@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+.header-inner {
+	padding: 80px 0 41px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-logo {
+	margin-bottom: 46px;
+}
+
+/* Navigation */
+.nav .nav-list {
+	display: flex;
+	list-style: none;
+}
+
+.nav-item-link {
+	text-decoration: none;
+	margin-left: 80px;
+	font-family: "Montserrat";
+	font-size: 20px;
+	color: black;
+}
+
+.nav-list:first-of-type {
+	margin-left: -60px;
+}
+
+.burger-icon-item {
+	display: none;
+}
+
+/* Header Img */
+
+.top-header-img {
+	text-align: center;
+	margin-bottom: 42px;
+}
+
+@media screen and (max-width: 1024px) {
+	.header-inner {
+		padding: 48px 0 26px 0;
+	}
+
+	.header-inner {
+		width: 919px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.header.menu-open {
+		background: #000;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1024px;
+		height: 316px;
+		z-index: 10;
+	}
+
+
+	.nav-item-link {
+		color: white;
+	}
+
+
+	.header.menu-open .burger-icon-item,
+	.header.menu-open .burger-icon-item:after {
+		background: #fff;
+	}
+
+	.header.menu-open .burger-icon-item:before {
+		content: none;
+	}
+
+	/*Burger icon*/
+	.burger-icon {
+		width: 48px;
+    	height: 31px;
+		border: none;
+		background: none;
+		position: absolute;
+	    left: 0;
+	    top: 70px;
+	    outline: none;
+	}
+
+	.burger-icon-item{
+		width: 48px;
+		height: 5px;
+		background: #000;
+		position: relative;
+		cursor: pointer;
+		display: block;
+	}
+
+	.burger-icon-item:before {
+		content: "";
+		display: block;
+		width: 48px;
+		height: 5px;
+		background: #000;
+		position: absolute;
+		top: -13px;
+		left: 0;
+	}
+
+	.burger-icon-item:after {
+		content: "";
+		display: block;
+		width: 48px;
+		height: 5px;
+		background: #000;
+		position: absolute;
+		bottom: -13px;
+		left: 0;
+	}
+
+
+	.nav .nav-list {
+		display: none;
+	}
+
+	.menu-open .nav .nav-list {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.menu-open path {
+		fill: white;
+	}
+
+	.menu-open .close {
+		position: absolute;
+		left: 0;
+		top: 70px;
+		width: 48px;
+		height: 48px;
+		opacity: 1;
+	}
+
+	.menu-open .close:before {
+		position: absolute;
+		top: -15px
+		left: 0;
+		content:'';
+		height: 48px;
+		width: 5px;
+		background-color: white;
+		
+	}
+
+	.menu-open .close:after {
+		position: absolute;
+		top: -15px
+		left: 0;
+		content:'';
+		height: 48px;
+		width: 5px;
+		background-color: white;
+		
+	}
+
+	.menu-open .close:before {
+		transform: rotate(45deg);
+	}
+	.menu-open .close:after {
+		transform: rotate(-45deg);
+	}
+
+	.menu-open .burger-icon {
+		opacity: 0;
+	}
+
+	.menu-close .close {
+		display: block;
+	}
+
+}
+
+
+@media screen and (max-width: 375px) {
+	
+	header-logo {
+		display: none;
+	}
+
+	.header-inner {
+		width: 375px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.header.menu-open {
+		background: #000;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 332px;
+		z-index: 10;
+	}
+
+
+	.nav-item-link {
+		color: white;
+	}
+
+
+	.header.menu-open .burger-icon-item,
+	.header.menu-open .burger-icon-item:after {
+		background: #fff;
+	}
+
+	.header.menu-open .burger-icon-item:before {
+		content: none;
+	}
+
+	/*Burger icon*/
+	.burger-icon {
+		width: 48px;
+    	height: 31px;
+		border: none;
+		background: none;
+		position: absolute;
+	    left: 0;
+	    top: 70px;
+	    outline: none;
+	}
+
+	.burger-icon-item{
+		width: 48px;
+		height: 5px;
+		background: #000;
+		position: relative;
+		cursor: pointer;
+		display: block;
+	}
+
+	.burger-icon-item:before {
+		content: "";
+		display: block;
+		width: 48px;
+		height: 5px;
+		background: #000;
+		position: absolute;
+		top: -13px;
+		left: 0;
+	}
+
+	.burger-icon-item:after {
+		content: "";
+		display: block;
+		width: 48px;
+		height: 5px;
+		background: #000;
+		position: absolute;
+		bottom: -13px;
+		left: 0;
+	}
+
+
+	.nav .nav-list {
+		display: none;
+	}
+
+	.menu-open .nav .nav-list {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.menu-open path {
+		fill: white;
+	}
+
+	.menu-open .close {
+		position: absolute;
+		left: 0;
+		top: 70px;
+		width: 48px;
+		height: 48px;
+		opacity: 1;
+	}
+
+	.menu-open .close:before {
+		position: absolute;
+		top: -15px
+		left: 0;
+		content:'';
+		height: 48px;
+		width: 5px;
+		background-color: white;
+		
+	}
+
+	.menu-open .close:after {
+		position: absolute;
+		top: -15px
+		left: 0;
+		content:'';
+		height: 48px;
+		width: 5px;
+		background-color: white;
+		
+	}
+
+	.menu-open .close:before {
+		transform: rotate(45deg);
+	}
+	.menu-open .close:after {
+		transform: rotate(-45deg);
+	}
+
+	.menu-open .burger-icon {
+		opacity: 0;
+	}
+
+}

@@ -1,0 +1,64 @@
+.main-inner {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.text-center {
+	font-size: 28px;
+	font-family: "Montserrat";
+	margin-bottom: 42px;
+}
+
+.line, .contact-us {
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+	padding: 16px 208px 16px 208px;
+	margin-bottom: 60px;
+}
+
+.history, .contact {
+	font-family: "Montserrat";
+	font-size: 40px;
+	color: black;
+	text-align: center;
+	font-weight: normal;
+}
+
+/* Blocks */
+
+.blocks {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.block-one {
+	width: 500px;
+	height: 394px;
+	background: black;
+}
+
+
+.block-text-one	{
+	color: white;
+	font-family: "Montserrat";
+	font-size: 18px;
+	margin: 94px 50px 94px 50px;
+}
+
+span {
+	font-size: 48px;
+}
+
+.block-two {
+	width: 500px;
+	height: 394px;
+	background: black;
+}
+
+.block-text-two	{
+	color: white;
+	font-family: "Montserrat";
+	font-size: 18px;
+	margin: 50px;
+}
