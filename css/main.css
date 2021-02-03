@@ -24,8 +24,6 @@
 	font-weight: normal;
 }
 
-/* Blocks */
-
 .blocks {
 	display: flex;
 	justify-content: space-between;
